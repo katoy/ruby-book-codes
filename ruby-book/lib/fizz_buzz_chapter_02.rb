@@ -1,19 +1,17 @@
 def fizz_buzz(n)
-  if n % 15 == 0
-    'Fizz Buzz'
-  elsif n % 3 == 0
-    'Fizz'
-  elsif n % 5 == 0
-    'Buzz'
-  else
-    n.to_s
+  ret = ''
+  ret += 'Fizz' if (n % 3).zero?
+  ret += 'Buzz' if (n % 5).zero?
+  ret = n.to_s if ret == ""
+  ret
+end
+
+def sample_run
+  [1, 2, 3, 4, 5, 15].each do |x|
+    puts "fizz_buzz(#{x}): #{fizz_buzz(x)}"
   end
 end
 
-puts fizz_buzz(1)
-puts fizz_buzz(2)
-puts fizz_buzz(3)
-puts fizz_buzz(4)
-puts fizz_buzz(5)
-puts fizz_buzz(6)
-puts fizz_buzz(15)
+if __FILE__ == $0
+  sample_run
+end

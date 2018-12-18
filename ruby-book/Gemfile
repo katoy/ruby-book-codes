@@ -1,0 +1,22 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+# gem "rails"
+group :development, :test do
+  gem 'rubocop', require: false
+  gem 'rspec'
+  gem 'simplecov', require: false
+
+  gem 'pry-byebug'
+  gem 'pry-coolline'
+  gem 'pry-doc'
+  gem 'awesome_print'
+end
+
+gem 'metric_fu'
+gem 'ruboty'
+gem 'lita'
+gem 'brakeman'

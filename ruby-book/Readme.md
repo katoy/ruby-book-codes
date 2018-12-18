@@ -9,3 +9,61 @@ See
 
 - https://github.com/katoy?utf8=%E2%9C%93&tab=repositories&q=rspec&type=&language=
   rspec の練習レポジトリー
+
+## 実行方法
+
+    $ rspec
+    $ rspec spec/lib/fizz_buzz_01_spec.rb
+    $ rspec spec/lib/fizz_buzz_01_spec.rb:10
+    $ rspec spec/lib/fizz_buzz_01_spec.rb -P "arg_1"
+
+    $ rspec -f d
+    $ rspec -f p
+    $ rspec --order rand
+    $ rspec --seed 62490
+
+    $ rspec -r pry
+
+## カバレッジ
+
+    $ rm -fr Coverage
+    $ rspec
+    $ open coverage/index.html
+
+## github での実行
+
+- Build
+
+- CircleCI
+
+- Coverage
+
+## 静的チェック
+
+- rubocop
+
+- metrics_fu
+
+    $ metric_fu --no-flog --no-roodi
+
+- brakeman
+
+## ドキュメンテーション
+
+- plantuml
+
+- blueprint
+
+## リバース・エンジニアリング
+
+- schemaspy
+
+## トピック
+
+- mock
+
+- selenium
+
+- OWASP ZAP
+
+- Gatling
