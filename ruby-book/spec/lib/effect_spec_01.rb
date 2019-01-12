@@ -15,6 +15,7 @@ RSpec.describe Effects do
 
   describe '.echo' do
     [
+      [-1, ''],
       [0, ''],
       [1, 'Ruby is fun!'],
       [2, 'RRuubbyy iiss ffuunn!!'],
@@ -31,6 +32,7 @@ RSpec.describe Effects do
 
   describe '.loud' do
     [
+      [-1, ''],
       [0, 'RUBY IS FUN!'],
       [1, 'RUBY! IS! FUN!!'],
       [2, 'RUBY!! IS!! FUN!!!'],
