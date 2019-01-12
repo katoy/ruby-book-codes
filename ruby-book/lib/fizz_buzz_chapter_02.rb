@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def fizz_buzz(n)
   ret = ''
   ret += 'Fizz' if (n % 3).zero?

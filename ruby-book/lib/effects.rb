@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Effects
   def self.reverse
     ->(words) do

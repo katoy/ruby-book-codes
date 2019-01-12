@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Ticket
   attr_reader :fare, :stamped_at
 

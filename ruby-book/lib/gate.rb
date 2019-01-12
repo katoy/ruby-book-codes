@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # 改札機を表すクラス
 class Gate
   STATIONS = [:umeda, :juso, :mikuni] # :nodoc:

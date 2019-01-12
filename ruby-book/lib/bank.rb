@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require './lib/deep_freezable'
 
 class Bank
