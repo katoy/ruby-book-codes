@@ -9,6 +9,8 @@ class Gate
   # ==== 引数
   # * +name+ - 駅名
   def initialize(name)
+    raise(ArgumentError, "invalid name: #{name}") unless STATIONS.include?(name)
+
     @name = name
   end
 
@@ -34,7 +36,7 @@ class Gate
   def calc_fare(ticket)
     from = STATIONS.index(ticket.stamped_at)
     to = STATIONS.index(@name)
-    distance = to - from
+    distance = (to - from).abs
     FARES[distance - 1]
   end
 end
