@@ -1,0 +1,26 @@
+AllCops:
+  Include:
+    - lib/**
+    - spec/lib/**
+
+Style/Documentation:
+  Enabled: false
+
+# 日本語でのコメントを許可
+AsciiComments:
+  Enabled: false
+
+# 行数が多すぎる
+Metrics/MethodLength:
+  Max: 30
+Metrics/BlockLength:
+  Exclude:
+    - spec/lib/**
+
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  Exclude:
+    - lib/bank.rb
+    - spec/lib/deep_freezable*_spec.rb

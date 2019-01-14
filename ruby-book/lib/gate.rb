@@ -2,8 +2,8 @@
 
 # 改札機を表すクラス
 class Gate
-  STATIONS = [:umeda, :juso, :mikuni] # :nodoc:
-  FARES = [150, 190] # :nodoc:
+  STATIONS = %i[umeda juso mikuni].freeze # :nodoc:
+  FARES = [150, 190].freeze # :nodoc:
 
   # Gateオブジェクトの作成
   # ==== 引数

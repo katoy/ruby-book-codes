@@ -4,7 +4,7 @@ def fizz_buzz(n)
   ret = ''
   ret += 'Fizz' if (n % 3).zero?
   ret += 'Buzz' if (n % 5).zero?
-  ret = n.to_s if ret == ""
+  ret = n.to_s if ret == ''
   ret
 end
 
@@ -14,6 +14,6 @@ def sample_run
   end
 end
 
-if __FILE__ == $0
+if $PROGRAM_NAME == __FILE__
   sample_run
 end
