@@ -16,6 +16,7 @@ RSpec.describe Effects do
       let(:effect) { Effects.echo(2) }
       it { is_expected.to eq 'RRuubbyy iiss ffuunn!!' }
     end
+
     context 'rate is 3' do
       let(:effect) { Effects.echo(3) }
       it { is_expected.to eq 'RRRuuubbbyyy iiisss fffuuunnn!!!' }
@@ -27,6 +28,7 @@ RSpec.describe Effects do
       let(:effect) { Effects.loud(2) }
       it { is_expected.to eq 'RUBY!! IS!! FUN!!!' }
     end
+
     context 'level is 3' do
       let(:effect) { Effects.loud(3) }
       it { is_expected.to eq 'RUBY!!! IS!!! FUN!!!!' }

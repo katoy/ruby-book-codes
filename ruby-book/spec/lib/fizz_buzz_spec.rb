@@ -9,6 +9,6 @@ RSpec.describe 'fizz_buzz' do
     it '2' do expect(fizz_buzz(2)).to eq '2' end
     it '3' do expect(fizz_buzz(3)).to eq 'Fizz' end
     it '5' do expect(fizz_buzz(5)).to eq 'Buzz' end
-    it '15' do expect(fizz_buzz(15)).to eq 'FizzBuzz' end
+    it '15' do expect(fizz_buzz(15)).to eq 'Fizz Buzz' end
   end
 end

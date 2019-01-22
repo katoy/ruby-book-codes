@@ -11,7 +11,7 @@ RSpec.describe 'Gate' do
   end
 
   context 'exit' do
-    TEST_CASES = [
+    [
       { from: :umeda, to: :juso, fare: 150, result: true },
       { from: :umeda, to: :juso, fare: 140, result: false },
       { from: :umeda, to: :juso, fare: 160, result: true },

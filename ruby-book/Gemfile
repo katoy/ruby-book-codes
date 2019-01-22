@@ -16,6 +16,7 @@ group :development, :test do
   gem 'awesome_print'
 end
 
+gem 'rb-readline'
 gem 'metric_fu'
 gem 'ruboty'
 gem 'lita'
